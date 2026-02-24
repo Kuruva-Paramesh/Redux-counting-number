@@ -1,16 +1,28 @@
-# React + Vite
+React Redux Counter App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Redux is a state management library. In React, Redux helps manage global state so multiple components can access and update the same data.
 
-Currently, two official plugins are available:
+For a counter app, the state is just a number, and we can increment or decrement it using Redux.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+2. Setting Up Redux in React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Step 1 – Install Redux packages
 
-## Expanding the ESLint configuration
+===>
+     npm install redux react-redux @reduxjs/toolkit
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+step2 --Core Concepts in Redux
+
+===>
+       Store – Holds the entire state of the app.
+
+        Action – An object describing what you want to do. Example: { type: "INCREMENT" }
+
+        Reducer – A function that updates the state based on the action.
+
+        Dispatch – Sends an action to the reducer to update the state.
+
+        useSelector – React hook to read state from the Redux store.
+
+        useDispatch – React hook to send actions to Redux.
